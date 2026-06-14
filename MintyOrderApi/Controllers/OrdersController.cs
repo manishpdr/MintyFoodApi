@@ -8,7 +8,9 @@ namespace MintyOrderApi.Controllers
     [Route("api/[controller]")]
     public class OrdersController : ControllerBase
     {
-        private readonly IOrderService _orderServi
+        private readonly IOrderService _orderService;
+
+
 
         public OrdersController(IOrderService orderService)
         {
